@@ -24,10 +24,10 @@ s3 = boto3.client('s3', region_name='us-east-1', aws_access_key_id="",
 aws_secret_access_key= "")
 ec2 = boto3.client('ec2', region_name='us-east-1', aws_access_key_id="",
 aws_secret_access_key= "")
-request_queue_url = 'https://sqs.us-east-1.amazonaws.com/851725184454/1229499923-req-queue'
-response_queue_url = 'https://sqs.us-east-1.amazonaws.com/851725184454/1229499923-resp-queue'
-input_bucket = '1229499923-in-bucket'
-output_bucket = '1229499923-out-bucket'
+request_queue_url = 'AWS_REQUEST_QUEUE'
+response_queue_url = 'AWS_RESPONSE_QUEUE'
+input_bucket = 'AWS-INPUT-BUCKET'
+output_bucket = 'AWS-OUTPUT-BUCKET'
 save_directory = '/home/ubuntu/ccproject1/recieved_files'
 instance_id = subprocess.check_output(['ec2-metadata', '-i']).decode('utf-8').split(': ')[-1][:-1]
 
