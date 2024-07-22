@@ -18,7 +18,7 @@ s3 = boto3.client('s3', region_name='us-east-1', aws_access_key_id=os.getenv('AW
 aws_secret_access_key= os.getenv('AWS_SECRET_ACCESS_KEY'))
 sqs = boto3.client('sqs', region_name='us-east-1')
 ec2 = boto3.client('ec2', aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'), aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY'), region_name='us-east-1')
-input_bucket = '1229499923-in-bucket'
+input_bucket = 'AWS_INPUT_BUCKET'
 autoscaling = boto3.client('autoscaling', region_name='us-east-1',)
 launch_template_id = 'lt-09626d39302d5dfa8'
 
