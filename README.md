@@ -3,6 +3,8 @@
 ## Overview
 This project involves setting up an image recognition system using AWS services. The system consists of a Web Tier to receive image inputs from users, forward them to the App Tier for inference, and return the recognition results. The App Tier performs the actual image recognition using a deep learning model and is designed to scale automatically based on request demand. The Data Tier stores images and results in S3 buckets for persistence.
 
+![Figure.1](./images/project1.png)
+
 ## Components
 1. Web Tier
 2. App Tier
